@@ -1,0 +1,49 @@
+
+
+ul{
+    list-style: none;
+}
+.navbar {
+    position: relative;
+}
+.left{
+    float: left;
+    width: 200px;
+    height: 60px;
+}
+
+.left-1{
+    position: relative;
+    left: 10%;
+    bottom: 0%;
+    color: #a9a9a9
+}
+
+.left-2{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    left: 30%; 
+    bottom: 40%
+}
+
+.search-form{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid pink;
+}
+
+.search{
+    width: 36%;
+    max-width: 600px;
+}
+.search-btn{
+    display: inline-block;
+    height: 30px;
+}
+.right{
+    float: right;
+}
