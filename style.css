@@ -104,63 +104,34 @@ h3{
 
 .left{
     float:left;
+    /* display: flex;
+    border: 1px solid pink;
+    height: 3.5em;
+    min-width: 300px;
+    justify-content: space-between;
+    align-items: center; */
 }
 
 .left-1,
-.left-2,
-.right-1,
-.right-2,
-.right-3,
-.right-4,
-.right-5{
+.left-2{
     position: relative;
 }
 
 .left-1{
-    color: #a9a9a9;
+    /* color: #a9a9a9; */
     left: 20%;
-    top: 1em;
+    top: 1.25em;
     min-width: 100px;
 }
 
 .left-2{  
     width: 80px;
     left: 60%;
-    top: -0.4em;
+    top: -0.15em;
 }
 
 .right{
-    float: right;
-}
-
-
-.right-1{
-    right: 160%;
-    top: 1em;
-}
-
-.right-2{
-    right: 120%;
-    top: -0.05em;
-}
-
-.right-3{
-    right: 80%;
-    top: -1.2em;
-}
-
-.right-4{
-    right: 40%;
-    top: -2.3em;
-}
-
-.right-5{
-    right: 15%;
-    top: -4em;
-}
-
-li {
-    /* border: 1px solid teal; */
+    display: none;
 }
 
 form{
@@ -285,13 +256,7 @@ form{
     /* video box's size!!!*/
     .vid{
         width: 45%;
-        /* margin: 0 0.9em; */
     }
-    
-    /* .vid-caption,
-    .vid-main{
-        width: 100%;
-    } */
 }
 
 @media(min-width: 810px){
@@ -323,8 +288,8 @@ form{
     }
 
     .search{
-        max-width: 660px;
-        width: 25%;
+        max-width: 800px;
+        width: 15%;
         padding: 0.55em 0;
     }
 
@@ -339,24 +304,14 @@ form{
         opacity: 0.6;
     }
 
-    .right-2{
-        right: 130%;
-        top: 1em;
-    }
-    
-    .right-3{
-        right: 90%;
-        top: -0.1em;
-    }
-    
-    .right-4{
-        right: 50%;
-        top: -1.25em;
-    }
-    
-    .right-5{
-        right: 25%;
-        top: -3em;
+    .right{
+        float: right;
+        display: flex;
+        min-width: 300px;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.5em;
+        margin-right: 0.9em;
     }
 }
 
