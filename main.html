@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ba841414d2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <form>
+        <input type="text" placeholder="Search" class="search"/>           
+        <button class="search-btn btn-border"><i class="fas fa-search"></i></button>
+    </form>
     <nav class="navbar">
         <ul class="left">
-            <li class="left-1">
+            <li class="col-2 left-1">
                 <i class="fas fa-bars"></i>
             </li>
-            <li class="left-2">
+            <li class="col-2 left-2">
                 <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="youtube-icon"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">
                     <g class="style-scope ytd-topbar-logo-renderer">
                       <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
@@ -56,31 +60,289 @@
                       </g>
                     </g>
                     </g>
-                  </svg>
+                </svg>
             </li>
         </ul>
-        <form class="search-form">
-            <input type="text" placeholder="Search" class="search"/>           
-            <button class="search-btn"><i class="fas fa-search"></i></button>
-        </form>
+        
         <ul class="right">
-            <li class="col-1">
+            <li class="col-1 right-1">
                 <i id="search-icon" class="fas fa-search"></i>
             </li>            
-            <li class="col-1">
+            <li class="col-1 right-2">
                 <i class="fas fa-video"></i>
             </li>
-            <li class="col-1">
+            <li class="col-1 right-3">
                 <i class="fas fa-align-justify"></i>
             </li>
-            <li class="col-1">
-                <i class="fas fa-bell"></i>
+            <li class="col-1 right-4">
+                <i class="fas fa-ellipsis-v"></i>
             </li>
-            <li class="col-1">
-                <img src="https://picsum.photos/200/200" href="" class="profile-pic round-img"/>
+            <li class="col-1 right-5">
+                <button class="signin-btn"><i class="fas fa-user-circle"></i><span>SIGN IN</span></button>
             </li>
         </ul>
     </nav>
+    <div class="container wrapper-main">
+
     
+      <div class="container-main">
+        <div class="video-player">
+          <div class="iframe-container">
+            <iframe class="video" src="https://www.youtube.com/embed/HhjHYkPQ8F0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+        </div>
+        <div class="video-top">
+          <div class="video-title">
+            <h2 class="video-title-1">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="video-title-2 dark">39,000,988 views • Apr 29, 2017</p>
+          </div>
+          <div class="video-misc">
+            <ul>
+              <li><button><i class="fas fa-thumbs-up"></i><span> 1.5K</span></button></li>
+              <li><button><i class="fas fa-thumbs-down"></i><span> 1.5K</span></button></li>
+              <li><button><i class="fas fa-share"></i> Share</button></li>
+              <li><button><i class="far fa-plus-square"></i> Save</button></li>
+              <li><button><i class="fas fa-ellipsis-h"></i></button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-desc">
+          <div class="video-artistinfo">
+            <div class="video-artistinfo-left">
+              <div class="video-artistinfo-artist">
+                <img class="video-artistinfo-img round-img" src="https://yt3.ggpht.com/a/AGF-l78Iceo1AZKNCJp0-O340DfrXRpvqf5Xc7GHJw=s48-c-k-c0xffffffff-no-rj-mo" class="videoartistinfo-icon round-img"/>
+                <div class="video-artistinfo-words">
+                  <h5>Alan Walker</h5>
+                  <p class="mini-font medium">1M subscribers</p>
+                  <p class="video-artistinfo-maindesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <button class="medium">SHOW MORE</button>
+                </div>
+              </div>
+              <div class="video-artistinfo-right">
+                <button class="sub-btn">Subscribe</button>
+              </div>       
+            </div>     
+          </div>
+        </div>
+      </div>
+
+      <div class="container-side">
+        <div class="upnext">
+          <a class="video-card" href="#">
+            <div class="video-card-top">
+              <h4>Up next</h4>
+              <div class="autoplay">
+                <p class="dark">AUTOPLAY </p><i class="fas fa-toggle-on fa-2x"></i>
+              </div>          
+            </div>
+            <div class="video-card-whole">
+              <div class="video-card-player">
+                <img src="https://i.ytimg.com/an_webp/Q6jnXN_nTlY/mqdefault_6s.webp?du=3000&sqp=CPrOvvIF&rs=AOn4CLCA49pH2ePDiyLYUW_CfErVv1mhYg"/>            
+                <div class="video-card-time">
+                  <span class="vid-time">3:14</span>
+                </div>  
+              </div>
+              <div class="video-card-info">
+                <h5 class="video-card-title">
+                    Flashback FM <i class="fas fa-check-circle"></i>
+                </h5>
+                <p class="video-card-author medium">
+                    author
+                </p>
+                <p class="video-card-views medium">
+                  25.5M views
+                </p>
+              </div>
+            </div>   
+          </a>
+        </div>
+
+        <div class="allvideos">
+          <a class="video-card" href="#">
+            <div class="video-card-whole">
+              <div class="video-card-player">
+                <img src="https://i.ytimg.com/an_webp/Q6jnXN_nTlY/mqdefault_6s.webp?du=3000&sqp=CPrOvvIF&rs=AOn4CLCA49pH2ePDiyLYUW_CfErVv1mhYg"/>            
+                <div class="video-card-time">
+                  <span class="vid-time">3:14</span>
+                </div>  
+              </div>
+              <div class="video-card-info">
+                <h5 class="video-card-title">
+                    Flashback FM <i class="fas fa-check-circle"></i>
+                </h5>
+                <p class="video-card-author medium">
+                    author
+                </p>
+                <p class="video-card-views medium">
+                  25.5M views
+                </p>
+              </div>
+            </div>   
+          </a>
+
+          <a class="video-card" href="#">
+            <div class="video-card-whole">
+              <div class="video-card-player">
+                <img src="https://i.ytimg.com/an_webp/Q6jnXN_nTlY/mqdefault_6s.webp?du=3000&sqp=CPrOvvIF&rs=AOn4CLCA49pH2ePDiyLYUW_CfErVv1mhYg"/>            
+                <div class="video-card-time">
+                  <span class="vid-time">3:14</span>
+                </div>  
+              </div>
+              <div class="video-card-info">
+                <h5 class="video-card-title">
+                    Flashback FM <i class="fas fa-check-circle"></i>
+                </h5>
+                <p class="video-card-author medium">
+                    author
+                </p>
+                <p class="video-card-views medium">
+                  25.5M views
+                </p>
+              </div>
+            </div>   
+          </a>
+
+          <a class="video-card" href="#">
+            <div class="video-card-whole">
+              <div class="video-card-player">
+                <img src="https://i.ytimg.com/an_webp/Q6jnXN_nTlY/mqdefault_6s.webp?du=3000&sqp=CPrOvvIF&rs=AOn4CLCA49pH2ePDiyLYUW_CfErVv1mhYg"/>            
+                <div class="video-card-time">
+                  <span class="vid-time">3:14</span>
+                </div>  
+              </div>
+              <div class="video-card-info">
+                <h5 class="video-card-title">
+                    Flashback FM <i class="fas fa-check-circle"></i>
+                </h5>
+                <p class="video-card-author medium">
+                    author
+                </p>
+                <p class="video-card-views medium">
+                  25.5M views
+                </p>
+              </div>
+            </div>   
+          </a>
+
+          <a class="video-card" href="#">
+            <div class="video-card-whole">
+              <div class="video-card-player">
+                <img src="https://i.ytimg.com/an_webp/Q6jnXN_nTlY/mqdefault_6s.webp?du=3000&sqp=CPrOvvIF&rs=AOn4CLCA49pH2ePDiyLYUW_CfErVv1mhYg"/>            
+                <div class="video-card-time">
+                  <span class="vid-time">3:14</span>
+                </div>  
+              </div>
+              <div class="video-card-info">
+                <h5 class="video-card-title">
+                    Flashback FM <i class="fas fa-check-circle"></i>
+                </h5>
+                <p class="video-card-author medium">
+                    author
+                </p>
+                <p class="video-card-views medium">
+                  25.5M views
+                </p>
+              </div>
+            </div>   
+          </a>
+          <button class="btn-outline">SHOW MORE</button>
+        </div>
+      </div>
+      <!-- side ends -->
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-count">
+            <p class="comment-header-text dark">2177 Comments</p>
+          </div>
+          <div class="comment-sort">
+            <p class="comment-header-text dark"><i class="fas fa-stream"></i> SORT BY</p>
+          </div>
+        </div>
+
+        <div class="comment-user">
+          <div class="comment-img">
+            <img class="comment-img-box round-img" src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" class="videoartistinfo-icon round-img"/>
+          </div>
+          <div class="comment-input">
+            <input class="comment-input-box" type="text" placeholder="Add a public comment ..."/>
+          </div>     
+        </div>
+
+        <div class="comment-others">
+          <div class="comment-img">
+            <img class="comment-img-box round-img" src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" class="videoartistinfo-icon round-img"/>
+          </div>
+          <div class="comment-input">
+            <div class="comment-input-wrapper">        
+                <div class="comment-others-name">
+                  <h5>SERIAL CRITOXIDES<span class="medium mini-font">  8 months ago</span></h5>    
+                </div>
+                <div class="comment-textarea">
+                  <p>0% nudity
+                    0% bad language
+                    100% pure talent
+                    Give like for underrated edm stars</p>
+                </div>
+                <div class="comment-like">
+                  <button class="dark"><i class="fas fa-thumbs-up"></i><span> 1.5K</span></button>
+                  <button class="dark"><i class="fas fa-thumbs-down"></i><span> 1.5K</span></button>
+                  <button class="dark"><span>REPLY</span></button>
+                </div>
+            </div>
+          </div>   
+        </div>
+
+        <div class="comment-others">
+          <div class="comment-img">
+            <img class="comment-img-box round-img" src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" class="videoartistinfo-icon round-img"/>
+          </div>
+          <div class="comment-input">
+              <div class="comment-others-name">
+                <h5>SERIAL CRITOXIDES<span class="medium mini-font">  8 months ago</span></h5>    
+              </div>
+              <div class="comment-textarea">
+                <p>0% nudity
+                  0% bad language
+                  100% pure talent
+                  Give like for underrated edm stars</p>
+              </div>
+              <div class="comment-like">
+                <button class="dark"><i class="fas fa-thumbs-up"></i><span> 1.5K</span></button>
+                <button class="dark"><i class="fas fa-thumbs-down"></i><span> 1.5K</span></button>
+                <button class="dark"><span>REPLY</span></button>
+              </div>
+          </div>   
+        </div>
+
+        <div class="comment-others">
+          <div class="comment-img">
+            <img class="comment-img-box round-img" src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" class="videoartistinfo-icon round-img"/>
+          </div>
+          <div class="comment-input">
+              <div class="comment-others-name">
+                <h5>SERIAL CRITOXIDES<span class="medium mini-font">  8 months ago</span></h5>    
+              </div>
+              <div class="comment-textarea">
+                <p>0% nudity
+                  0% bad language
+                  100% pure talent
+                  Give like for underrated edm stars</p>
+              </div>
+              <div class="comment-like">
+                <button class="dark"><i class="fas fa-thumbs-up"></i><span> 1.5K</span></button>
+                <button class="dark"><i class="fas fa-thumbs-down"></i><span> 1.5K</span></button>
+                <button class="dark"><span>REPLY</span></button>
+              </div>
+          </div>   
+        </div>
+
+
+
+      </div>
+      <!-- comment ends -->
+  </div>
+  <!-- wrapper ends -->
 </body>
 </html>
